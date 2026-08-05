@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Base document setup. Keep global rules minimal — most styling lives
+   in component files via Tailwind utility classes.
+   ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  overflow-x: hidden; /* guards against any accidental horizontal scroll */
+}
+
+/* Respect users who have asked the OS to reduce motion. Framer Motion
+   components read this too, but this covers plain CSS transitions. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Visible keyboard focus ring, styled to match the palette instead of
+   the browser default blue. */
+:focus-visible {
+  outline: 2px solid theme('colors.gold.DEFAULT');
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Reusable "eyebrow" label style used above section titles throughout
+   the page (e.g. "CEREMONIA", "RECEPCIÓN"). */
+.eyebrow {
+  @apply font-body text-xs tracking-widest2 uppercase text-gold;
+}
+
+/* Thin ornamental divider used to separate content within a section,
+   echoing the fine rules found on printed wedding stationery. */
+.ornament-rule {
+  @apply mx-auto h-px w-16 bg-gold/60;
+}
