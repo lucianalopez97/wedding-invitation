@@ -75,7 +75,7 @@ export const weddingConfig: WeddingConfig = {
   events: [
     {
       id: 'ceremony',
-      title: 'Ceremonia',
+      title: 'Civil',
       subtitle: 'Nos daremos el sí frente a quienes más queremos',
       time: '20:30 hs',
       venueName: 'Salón Canamico Lules',
