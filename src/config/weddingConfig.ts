@@ -232,6 +232,18 @@ gallery: {
   rsvpUrl: 'https://tally.so/r/lbjNdN',
   giftRegistryUrl: 'https://REPLACE_WITH_YOUR_GIFT_REGISTRY_URL',
 
+  payment: {
+  eyebrow: 'Un Gesto con Nosotros',
+  title: 'Si querés hacernos un regalo...',
+  description: 'Tu presencia es lo más importante. Si querés, también podés dejarnos un regalo.',
+  details: [
+    { label: 'Banco', value: 'Personal Pay' },
+    { label: 'Titular', value: 'Lourdes Maria Lopez' },
+    { label: 'Alias', value: 'Regalo.solylou' },
+    { label: 'CBU', value: '0000076500000008981525' },
+  ],
+},
+
   // ---------------------------------------------------------------------
   // BACKGROUND MUSIC — swap `src` to change the song. Place audio files
   // in `public/audio/` and reference them as "/audio/filename.mp3".

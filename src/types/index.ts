@@ -72,6 +72,11 @@ export interface GalleryImage {
   alt: string;
 }
 
+export interface PaymentDetail {
+  label: string;
+  value: string;
+}
+
 /** Root shape of the whole editable configuration object. */
 export interface WeddingConfig {
   /** First partner's name, shown first in the couple name lockup. */
@@ -102,6 +107,14 @@ export interface WeddingConfig {
   faq: FaqItem[];
 
   giftRegistryUrl: string;
+
+  payment: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    details: PaymentDetail[];
+  };
+
 
   /** Ordered list of schedule events (ceremony, reception, etc.). */
   events: WeddingEvent[];
@@ -176,3 +189,4 @@ export interface FaqItem {
   question: string;
   answer: string;
 }
+
