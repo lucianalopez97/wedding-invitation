@@ -9,7 +9,7 @@ import { GalleryLightbox } from './GalleryLightbox';
 const MOBILE_BREAKPOINT_QUERY = '(max-width: 639px)';
 
 /** How often the carousel auto-advances on mobile. */
-const MOBILE_AUTOPLAY_INTERVAL_MS = 500;
+const MOBILE_AUTOPLAY_INTERVAL_MS = 3000;
 /** How often the carousel auto-advances on desktop/tablet. */
 const DESKTOP_AUTOPLAY_INTERVAL_MS = 3000;
 
