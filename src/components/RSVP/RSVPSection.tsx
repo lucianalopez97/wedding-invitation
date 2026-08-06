@@ -21,7 +21,7 @@ export function RSVPSection() {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        <RSVPButton href={weddingConfig.rsvpUrl} label="Confirmar Asistencia" icon={CheckCircle2} />
+        <RSVPButton href={weddingConfig.rsvpUrl} label="Haz click AQUÍ para confirmar asistencia" icon={CheckCircle2} />
         <RSVPButton to="/regalo" label="Datos para Regalo" icon={Wallet} />
 
         <div className="mt-6 text-gold">
